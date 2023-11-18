@@ -74,7 +74,7 @@ axios.get('https://my.tci.ir/api/v1/captcha')
         let hash = response.data.hash;
         let captcha = response.data.captcha;
 
-        axios.post('https://my.tci.ir/api/v1/bill/3133665051/1/guest',{
+        axios.post('https://my.tci.ir/api/v1/bill/7733581408/guest',{
             captcha_code:String(solveCaptcha(captcha)),
             captcha_hash:hash
         }).then(response=>{
